@@ -31,7 +31,7 @@ void CityTemp::SetCityName(string newCityName) {
 }
 
 void CityTemp::SetTemp(double newTemp) {
-    this->temp = temp;
+    this->temp = newTemp;
 }
 
 string CityTemp::GetCityName() {
