@@ -8,16 +8,16 @@ using namespace std;
 class CityTemp {
     private:
         string cityName;
-        double temp;
+        int temp;
     public:
         void ConvertFromCtoF();
         void ConvertFromFtoC();
         void SetCityName(string newCityName);
         void SetTemp(double newTemp);
         string GetCityName();
-        double GetTemp();
+        int GetTemp();
         CityTemp();
-        CityTemp(string cityName, double temp);
+        CityTemp(string cityName, int temp);
 };
 
 #endif

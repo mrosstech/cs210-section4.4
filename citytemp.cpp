@@ -9,13 +9,13 @@ CityTemp::CityTemp() {
     this->temp = -1000.0;
 }
 
-CityTemp::CityTemp(string cityName, double temp) {
+CityTemp::CityTemp(string cityName, int temp) {
     this->cityName = cityName;
     this->temp = temp;
 }
 
 void CityTemp::ConvertFromCtoF() {
-    double tempTemp;
+    int tempTemp;
     tempTemp = (this->temp * (9.0/5.0) + 32);
     this->temp = tempTemp;
 }
@@ -38,6 +38,6 @@ string CityTemp::GetCityName() {
     return this->cityName;
 }
 
-double CityTemp::GetTemp() {
+int CityTemp::GetTemp() {
     return this->temp;
 }
